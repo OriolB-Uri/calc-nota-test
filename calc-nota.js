@@ -1,7 +1,13 @@
 /** Pssst: Recuerda leer el fichero README.md */
 
 function calcNota(input, solution) {
-  return;
+  let nota = 0;
+  for (i = 0; i < solution.length; i++){
+    if(input[i] == solution[i]){
+      nota++
+    }
+  }
+  return nota;
 }
 
 console.log(calcNota("ABCDBBACAD", "ABCDBBACAD")); // 100 (el examen está perfecto)
